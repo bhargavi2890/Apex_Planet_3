@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">Riddle Rally</div>
+        <ul class="navbar-categories">
+            <li><a href="#" class="category-link" data-category="general">General</a></li>
+            <li><a href="#" class="category-link" data-category="math">Math</a></li>
+            <li><a href="#" class="category-link" data-category="logic">Logic</a></li>
+            <li><a href="#" class="category-link" data-category="funny">Funny</a></li>
+            <li><a href="#" class="category-link" data-category="kids">Kids</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1 id="category-title">Select a category to begin</h1>
+        
+        <div class="carousel-container">
+            <button class="carousel-btn prev-btn" aria-label="Previous card">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            
+            <div class="carousel">
+                            </div>
+            
+            <button class="carousel-btn next-btn" aria-label="Next card">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    <div class="modal" id="info-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
